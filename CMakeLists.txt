@@ -116,6 +116,7 @@ if(VERBOSE)
 	message(STATUS "contrib_private_headers: ${contrib_private_headers}")
 endif()
 
+target_include_directories(yaml-cpp PUBLIC include)
 include_directories(${YAML_CPP_SOURCE_DIR}/src)
 include_directories(${YAML_CPP_SOURCE_DIR}/include)
 
