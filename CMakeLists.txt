@@ -306,7 +306,7 @@ install(
 )
 
 #share include directory
-target_include_directories(yaml-cpp PUBLIC $<INSTALL_INTERFACE:include>)
+target_include_directories(yaml-cpp PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>)
 
 export(
     TARGETS yaml-cpp
