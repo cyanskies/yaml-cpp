@@ -306,7 +306,7 @@ install(
 )
 
 #share include directory
-target_include_directories(yaml-cpp PUBLIC include)
+target_include_directories(yaml-cpp PUBLIC $<INSTALL_INTERFACE:include>)
 
 export(
     TARGETS yaml-cpp
